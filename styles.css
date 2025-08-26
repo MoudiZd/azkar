@@ -1,0 +1,45 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    min-height: 100vh;
+}
+.section-header {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.collapse .sentence-box:nth-child(1) {
+    margin-top: 10px;
+}
+.sentence-box {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.5s 0.5ms;
+}
+.sentence-box.done,
+.sentence-box.done div,
+.sentence-box.done small {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+#repeated-sentences .sentence-box,
+.sentence-box div {
+    cursor: pointer;
+}
+#repeated-sentences .sentence-box {
+    white-space: pre-wrap;
+}
+
+html[data-bs-theme="dark"] .sentence-box:hover{
+    background-color: #e9e9e9;
+    color: black;
+}
+
+html[data-bs-theme="light"] .sentence-box:hover{
+    background-color: #888;
+    color: #e9e9e9;
+}
